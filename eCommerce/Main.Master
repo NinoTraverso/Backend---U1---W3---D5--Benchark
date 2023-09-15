@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="eCommerce.Main" %>
+
+<!DOCTYPE html>
+<!--
+    
+Sviluppare una applicazione web che consenta di simulare un piccolo ecommerce.
+
+La applicazione web dovrà prevedere:
+
+– Una pagina di default nella quale dovranno essere visualizzati, ed opportunamente posizonati per mezzo di appositi stili CSS, tutti gli articoli 
+  dell’ecommerce (compresa la foto dell’articolo),
+
+– Ogni articolo reindirizzerà l’utente ad una pagina di dettaglio dalla quale potrà visualizzare una descrizione aggiuntiva dell’articolo, il relativo 
+  prezzo ed un pulsante che consentirà di archiviare in un carrello l’articolo selezionato,
+
+– Una terza pagina che fungerà da elenco degli articoli nel carrello dell’utente. Da questa schermata l’utente potrà cancellare un singolo articolo o 
+  svuotare completamente il carrello. Entrambe le azioni devono poter far stampare, e quindi aggiornare, il totale degli articoli presenti.
+
+Importante:
+– Lo sviluppo di questa esercitazione deve prevedere l’uso di classi statiche e NON di database,
+– E’ gradito l’uso di CSS e layout grafici
+    
+    -->
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <div class="py-4 bg-warning">
+    <a href="Default.aspx" class="text-decoration-none text-light">HOME</a>
+    </div>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
